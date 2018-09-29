@@ -1,0 +1,35 @@
+table{border-collapse: collapse !important;border: 1px solid black;font-size: 14px;}
+.bb th{border:1px solid black;}
+.ddRight td{border-right:1px solid black !important;}
+.ddRight{border-right:1px solid black !important;}
+.ddLeft{border-left:1px solid black !important;}
+.ddLeft tr td{border-left:1px solid black !important;}
+
+tr.border_bottom td {border-bottom:1pt solid black;}
+.ddTop{ border-top:1px solid black !important;}
+.ddBottom{border-bottom:1px solid black !important;}
+.ddLR{border-left:1px solid black !important;border-right:1px solid black !important;}
+.ddLRTB{border-left:1px solid black !important;border-right:1px solid black !important;border-top:1px solid black !important;border-bottomt:1px solid black !important;}
+.ddRightTop{border-right:1px solid black !important;border-top:1px solid black !important;}
+.ddRightBottom{border-right:1px solid black !important;border-bottom:1px solid black !important;}
+.ddLeftTop{border-left:1px solid black !important;border-top:1px solid black !important;}
+
+.Fonting{font-size:15px;}
+.Special{font-weight:bold;}
+.AS{text-align: center;}
+.AR{text-align:right;}
+table tr td{padding:2px;}
+.Padding tr td {padding:0px !important;} 
+
+.oLR{border-left:1px solid black !important;border-right:1px solid black !important;border-bottom:none !important;}
+
+.LRT{border-left:2px solid black !important;border-right:2px solid black !important;border-top:2px solid black !important;border-bottom:none !important;}
+
+.LR{border-left:2px solid black !important;border-right:2px solid black !important;border-top:none; !important;border-bottom:none !important;}
+
+.LRTopDim{border-left:2px solid black !important;border-right:2px solid black !important;border-top:1px solid black; !important;border-bottom:none !important;}
+
+.LRB{border-left:2px solid black !important;border-right:2px solid black !important;border-bottom:2px solid black !important;border-top:none !important;}
+
+.LRBTopDim{border-left:2px solid black !important;border-right:2px solid black !important;border-top:1px solid black; !important;border-bottom:2px solid black; !important;}
+
