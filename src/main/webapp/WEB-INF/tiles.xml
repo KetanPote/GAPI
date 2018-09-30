@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<!-- Foundation Starts -->
+	
+	<definition name="AdminPanel" template="/WEB-INF/Layouts/Dashboard.jsp">
+		<put-attribute name="title" value="Inventory"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>		       	
+	</definition>
+
+	<definition name="basic" template="/WEB-INF/Layouts/Layouts.jsp">	
+		<put-attribute name="title" value="Inventory"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>       	
+	</definition>
+	
+	<!-- Actual Defination Starts -->
+
+	<definition extends="AdminPanel" name="Page_Home">    
+       <put-attribute name="title" value="Scraper"></put-attribute>        
+       <put-attribute name="body" value="/WEB-INF/JSP/Page_Home.jsp"></put-attribute>  
+   </definition>
+
+	<definition extends="AdminPanel" name="Page_ProductList">    
+       <put-attribute name="title" value="Scraper"></put-attribute>        
+       <put-attribute name="body" value="/WEB-INF/JSP/Page_ProductList.jsp"></put-attribute>  
+   </definition>
+
+	<definition extends="AdminPanel" name="Page_Load">    
+       <put-attribute name="title" value="Scraper"></put-attribute>        
+       <put-attribute name="body" value="/WEB-INF/JSP/Page_Home.jsp"></put-attribute>  
+   </definition>
+
+</tiles-definitions>

@@ -10,25 +10,27 @@ xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springf
                     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
                     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd
                     http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
-        
-	    <mvc:resources mapping="/resources/**" location="/resources/" />
-	    
-	    <mvc:resources location="/CSS/**" mapping="/CSS/"/>
-	    <mvc:resources location="/JS/**" mapping="/JS/"/>
+        	    
 	    
 	    <context:annotation-config/>
-	    <context:component-scan base-package="com.kgapi.controller"/>
-	    <context:component-scan base-package="com.kgapi.beans"/>		     
+	    <context:component-scan base-package="com.lanihuang.simplewebapp"/>
 		<mvc:annotation-driven/>
-	    
-	    
-	<bean id="viewResolver"
-		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
-		<property name="viewClass" 
-			value="org.springframework.web.servlet.view.JstlView" />
-		<property name="prefix" value="/WEB-INF/JSP/" />
-		<property name="suffix" value=".jsp" />
-	</bean>    
+	    	    
+		<bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		    <property name="viewClass">
+		        <value>
+		            org.springframework.web.servlet.view.tiles2.TilesView
+		        </value>
+		    </property>
+		</bean>
+		
+		<bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
+		    <property name="definitions">
+		        <list>
+		            <value>/WEB-INF/tiles.xml</value>
+		        </list>
+		    </property>
+		</bean>			
 		
        
       <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"> 

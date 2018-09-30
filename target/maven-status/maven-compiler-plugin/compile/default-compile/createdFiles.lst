@@ -1,3 +1,5 @@
-com\kgapi\controller\LoginController.class
-com\kgapi\beans\AjaxBean.class
-com\kgapi\beans\WebConfig.class
+com\lanihuang\simplewebapp\conn\MySQLConnUtils.class
+com\lanihuang\simplewebapp\controller\LoginController.class
+com\lanihuang\simplewebapp\property\PropertyManager.class
+com\lanihuang\simplewebapp\entity\Entity.class
+com\lanihuang\simplewebapp\scrapper\Scrapper.class
